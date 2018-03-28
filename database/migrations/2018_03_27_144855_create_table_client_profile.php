@@ -15,6 +15,9 @@ class CreateTableClientProfile extends Migration
     {
         Schema::create('ClientPaydetails', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('refrence_no');
+            $table->integer('payment_verified')->unsigned();
+            $table->string('location');
             $table->timestamps();
         });
     }

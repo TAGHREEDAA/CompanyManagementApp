@@ -15,6 +15,12 @@ class CreateTableClientProfile extends Migration
     {
         Schema::create('ClientProfile', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('picture');
+            $table->integer('client_pay_id')->unsigned();
+            $table->string('');
+            $table->
+            $table->
+            $table->
             $table->timestamps();
         });
     }

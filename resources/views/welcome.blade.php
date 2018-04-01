@@ -1,95 +1,95 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.layout')
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+@section('content')
+    <div id="overlay">
+<section id="intro-header">
+    <div class="row">
+        <div class="wrap-headline">
+            <div class=" col-xs-10 col-xs-offset-1">
+            <h1 class="text-center">Want A  Thrilling Driving Experience</h1>
+            <h1 class="text-center">WeTaxi is There for you</h1>
+            </div>
+            <hr>
+            <ul class="list-inline list-unstyled text-center">
+                <li><a href="" class="btn btn-default btn-lg">Want to Ride</a></li>
+                <li><a href="" class="btn btn-primary btn-lg">want to Drive</a></li>
 
-            .position-ref {
-                position: relative;
-            }
+            </ul>
+        </div>
+    </div>
+</section>
+    </div>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
 
-            .content {
-                text-align: center;
-            }
 
-            .title {
-                font-size: 84px;
-            }
+@endsection
+@section('section')
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+    <section id="about">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4  col-xs-10 col-xs-offset-1 ">
+                 <div class="text-center">
+                 <span class="glyphicon glyphicon-fast-forward"></span>
+                 </div>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio doloribus eum non numquam odio quia quibusdam sequi unde voluptatum? Cupiditate facere iste, nihil omnis quibusdam quos repellendus sequi velit! </p>
+             </div>
+             <div class="col-md-4 col-xs-10 col-xs-offset-1 col-sm-3">
+                 <div class="text-center">
+                     <span class="glyphicon glyphicon-briefcase"></span>
+                 </div>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio doloribus eum non numquam odio quia quibusdam sequi unde voluptatum? Cupiditate facere iste, nihil omnis quibusdam quos repellendus sequi velit! </p>
+             </div>
+             <div class="col-md-4  col-xs-10 col-xs-offset-1 col-sm-3">
+                 <div class="text-center">
+                     <span class="glyphicon glyphicon-hourglass"></span>
+                 </div>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio doloribus eum non numquam odio quia quibusdam sequi unde voluptatum? Cupiditate facere iste, nihil omnis quibusdam quos repellendus sequi velit! </p>
+             </div>
+             <div class="col-md-4  col-xs-10 col-xs-offset-1 col-sm-3">
+                 <div class="text-center">
+                     <span class="glyphicon glyphicon-level-up"></span>
+                 </div>
+                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio doloribus eum non numquam odio quia quibusdam sequi unde voluptatum? Cupiditate facere iste, nihil omnis quibusdam quos repellendus sequi velit! </p>
+             </div>
+         </div>
+     </div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+    </section>
+    <div class="overlay">
+    <section id="contact" class="text-center" >
+        <h4>Stay connected with us. And contact us
+            info.</h4>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 ">
+                <form action="" class="form-horizontal ">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+
+                    </div>
+                    <div class="form-group">
+                       <textarea class="form-control" rows="3" placeholder="Type
+your message"></textarea>
+
+                    </div>
+                    <button class="btn btn-primary">contact</button>
+                </form>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+
+
+    </section>
+
+    </div>
+
+
+@endsection

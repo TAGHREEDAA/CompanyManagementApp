@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableClientProfile extends Migration
+class CreateTableClientPayDetails extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateTableClientProfile extends Migration
      */
     public function up()
     {
-        Schema::create('ClientPaydetails', function (Blueprint $table) {
+        Schema::create('ClientPayDetails', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('refrence_no');
+            $table->string('reference_no');
             $table->integer('payment_verified')->unsigned();
             $table->string('location');
             $table->timestamps();
